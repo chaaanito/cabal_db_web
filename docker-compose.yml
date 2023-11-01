@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  sqlserver:
+    container_name: sqlserver
+    build: 
+      context: ./db
+    ports:
+      - 1433:1433
+    volumes:
+      - ./db/data:/var/opt/mssql/data:rw
+    environment:
+      - SA_PASSWORD=${DB_PASSWORD}
+      - ACCEPT_EULA=Y
+   
+  app:
+    build: ./config/php
+    container_name: php-app
+    working_dir: /var/www/html
+    volumes:
+      - ./www/:/var/www/html
+    depends_on:
+      - sqlserver
+
+  nginx:
+    image: nginx:alpine
+    container_name: php-nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./www/:/var/www/html
+      - ./config/nginx/:/etc/nginx/conf.d/
+    depends_on:
+      - sqlserver
+
