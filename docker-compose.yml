@@ -9,7 +9,7 @@ services:
     volumes:
       - ./db/data:/var/opt/mssql/data:rw
     environment:
-      - SA_PASSWORD=${DB_PASSWORD}
+      - MSSQL_SA_PASSWORD=${DB_PASSWORD}
       - ACCEPT_EULA=Y
    
   app:
