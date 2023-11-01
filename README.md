@@ -1,4 +1,4 @@
-# My Awesome Project
+# PNM stack for Cabal Online Private Server
 
 -  PHP Version 8.1.0
 -  NGINX Version 1.21.4
@@ -32,5 +32,8 @@ Installation for PHP  -  NGINX  - MSSQL Stack for Cabal Website & Database using
 Your files are mounted in WWW folder so have fun.
 
 -->> ./www/:/var/www/html
+
+Test if no Errors after build.
+http://localhost:8080
 
 
