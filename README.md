@@ -15,6 +15,7 @@
 Installation for PHP  -  NGINX  - MSSQL Stack for Cabal Website & Database using Docker.
 
 ## Installation
+***DOCKER MUST BE INSTALLED***
 1. Clone the repository:
 2. CD to the Repository folder name.
 3. Copy .env.example to .env and configurate .env & change database with a strong password.
