@@ -1,5 +1,5 @@
 FROM php:8.1-fpm-buster
-
+ENV ACCEPT_EULA=Y
 # Install prerequisites required for tools and extensions installed later on.
 RUN apt-get update \
     && apt-get install -y apt-transport-https gnupg2 libpng-dev libzip-dev unzip \
