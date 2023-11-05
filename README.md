@@ -35,6 +35,6 @@ Your files are mounted in WWW folder so have fun.
 -->> ./www/:/var/www/html
 
 Test if no Errors after build.
-http://localhost:8080
+http://yourmachineip:8080
 
 
