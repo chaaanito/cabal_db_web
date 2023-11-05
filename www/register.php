@@ -1,9 +1,9 @@
 <?php
-$serverName = "172.168.9.41";
+$serverName = "yourip";
 $connectionOptions = array(
     "Database" => "Account",
     "UID" => "sa",
-    "PWD" => "Jbgj_Jbgj"
+    "PWD" => "youdbpassword"
 );
 
 $mssql = sqlsrv_connect($serverName, $connectionOptions);
