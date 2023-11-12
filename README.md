@@ -37,4 +37,7 @@ Your files are mounted in WWW folder so have fun.
 Test if no Errors after build.
 http://yourmachineip:8080
 
+##CONFIGS
 
+-Edit all files that are name config for Database connection.
+-Webshop can be updated to CSV file. check Webshop.php and find $userID condition to upload.
