@@ -39,5 +39,5 @@ http://yourmachineip:8080
 
 ##CONFIGS
 
--Edit all files that are name config for Database connection.
--Webshop can be updated to CSV file. check Webshop.php and find $userID condition to upload.
+-  Edit all files that has "config" name for Database connection.
+-  Webshop can be updated using CSV file upload. check Webshop.php and find $userID condition to view upload <div>.
